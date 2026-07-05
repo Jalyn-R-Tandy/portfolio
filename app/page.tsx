@@ -1,7 +1,19 @@
+import About from "@/components/pages/About";
+import Experience from "@/components/pages/Experience";
+import Projects from "@/components/pages/Projects";
+import { Section } from "@/components/ui/Section"
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-center items-center border-b border-gray-200">
-      <h1 className="font-bold text-2xl">Home Page</h1>
-    </main>
+    <>
+      {/* hero section */}
+      <Section id="home">
+        <h2 className="font-bold text-2xl">Hero Section</h2>
+      </Section>
+
+      <About />
+      <Experience />
+      <Projects />
+    </>
   );
 }

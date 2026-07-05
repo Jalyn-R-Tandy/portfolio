@@ -1,7 +1,9 @@
+import { Section } from "@/components/ui/Section"
+
 export default function Experience() {
   return (
-    <main className="min-h-screen flex justify-center items-center border-b border-gray-200">
-      <h1 className="font-bold text-2xl">Experience Section</h1>
-    </main>
+    <Section id="experience">
+      <h2 className="font-bold text-2xl">Experiences</h2>
+    </Section>
   );
 }
