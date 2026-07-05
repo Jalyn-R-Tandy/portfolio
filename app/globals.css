@@ -1,9 +1,21 @@
 @import "tailwindcss";
 
 @theme {
+  /* semantic color use */
+  --color-surface: var(--color-papaya-whip);
+  --color-text-main: var(--color-deep-space-blue);
+  --color-text-subtle: var(--color-steel-blue);
+  --color-accent: var(--color-brick-red);
+  --color-critical: var(--color-molten-lava);
+
+  /* original color scheme */
   --color-molten-lava: #780000ff;
   --color-brick-red: #c1121fff;
   --color-papaya-whip: #fdf0d5ff;
   --color-deep-space-blue: #003049ff;
   --color-steel-blue: #669bbcff;
+}
+
+* {
+  scroll-behavior: smooth;
 }

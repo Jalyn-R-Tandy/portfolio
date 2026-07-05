@@ -1,15 +1,6 @@
-interface SectionProps {
-  children: React.ReactNode;
-  id?: string;
-  className?: string;
-}
-
-export function Section({ children, id, className }: SectionProps) {
+export function Section({ children }: { children: React.ReactNode }) {
   return (
-    <section
-      id={id}
-      className={`min-h-screen flex justify-center items-center border-b border-deep-space-blue/20 ${className}`}
-    >
+    <section className=" w-full flex justify-center items-center flex-col border-b border-deep-space-blue/20">
       {children}
     </section>
   )
