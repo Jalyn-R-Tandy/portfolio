@@ -11,9 +11,14 @@
   /* original color scheme */
   --color-molten-lava: #780000ff;
   --color-brick-red: #c1121fff;
-  --color-papaya-whip: #fdf0d5ff;
+  --color-papaya-whip: #ffffff;
   --color-deep-space-blue: #003049ff;
   --color-steel-blue: #669bbcff;
+
+  /* fonts */
+  --font-sans: "Outfit", sans-serif;
+
+  /* Papaya Whip - fdf0d5ff */
 }
 
 * {

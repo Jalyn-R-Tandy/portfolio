@@ -10,20 +10,22 @@ import { usePathname } from "next/navigation"
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 flex justify-center px-6 py-4 border-b border-gray-500/20">
-      <div className="flex w-full max-w-5xl items-center justify-between">
+    <nav className="sticky top-0 z-50 flex justify-center p-4 border-b border-gray-500/20">
+      <div className="flex w-full max-w-7xl items-center justify-between">
         {/* name branding */}
         <div>
           <Link href="/">
             <h1 className="text-xl w-32 font-bold">Jalyn Tandy</h1>
           </Link>
         </div>
+
         {/* centered pill nav bar */}
-        <div className="flex items-center gap-6 rounded-full bg-gray-500/10 backdrop-blur-lg border border-gray-500/20">
+        <div className="flex items-center rounded-full bg-gray-500/10 backdrop-blur-lg border border-deep-space-blue/20 p-1.5 gap-2">
           <NavLink href="/about" Icon={IoPersonOutline} label="About"/>
           <NavLink href="/experience" Icon={MdWorkOutline} label="Experience"/>
           <NavLink href="/projects" Icon={GrProjects} label="Projects"/>
         </div>
+
         {/* social media links */}
         <div className="justify-end gap-4 flex w-32">
           <SocialLink href="https://www.linkedin.com/in/jalyn-tandy/" Icon={FaLinkedin} />
@@ -41,7 +43,7 @@ function NavLink({ href, Icon, label }: { href: string; Icon: IconType; label: s
   const isActive = pathname === href
 
   return (
-    <Link href={href} className={`text-sm font-medium px-4 py-2 rounded-full flex gap-2 mx-1.5 my-1.5 ${isActive ? 'bg-white' : ''}`}>
+    <Link href={href} className={`text-sm font-medium py-1.5 px-4 rounded-full flex gap-2 text-deep-space-blue/80 ${isActive ? 'bg-white' : ''}`}>
       <Icon size={18} />
       {label}
     </Link>
