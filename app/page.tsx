@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <Section>
       {/** introduction */}
-      <h1 className="font-bold text-6xl sm:text-7xl mb-4">Hi, I&apos;m Jalyn Tandy</h1>
-      <h2 className="text-2xl mb-8">Computer Science | Iowa State University</h2>
-      <p className="text-xl mb-12 max-w-3xl text-center">Passionate about building scalable software solutions and exploring the intersection of modern web development and data-driven systems.</p>
+      <h1 className="font-bold text-5xl md:text-7xl mb-4">Hi, I&apos;m Jalyn Tandy</h1>
+      <h2 className="text-xl mb-6 md:mb-8">Computer Science | Iowa State University</h2>
+      <p className="text-lg md:text-xl mb-12 max-w-3xl text-center">Passionate about building scalable software solutions and exploring the intersection of modern web development and data-driven systems.</p>
 
       {/** cta buttons */}
       <div className="flex gap-4">

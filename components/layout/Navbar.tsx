@@ -10,24 +10,24 @@ import { usePathname } from "next/navigation"
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 flex justify-center p-4 border-b border-gray-500/20">
+    <nav className="sticky top-0 z-50 flex justify-center p-2 md:p-4 border-b border-gray-500/20">
       <div className="flex w-full max-w-7xl items-center justify-between">
         {/* name branding */}
-        <div>
+        <div className="w-24 md:w-32">
           <Link href="/">
-            <h1 className="text-xl w-32 font-bold">Jalyn Tandy</h1>
+            <h1 className="text-lg md:text-xl w-32 font-bold">Jalyn Tandy</h1>
           </Link>
         </div>
 
         {/* centered pill nav bar */}
-        <div className="flex items-center rounded-full bg-gray-500/10 backdrop-blur-lg border border-deep-space-blue/20 p-1.5 gap-2">
+        <div className="flex items-center rounded-full bg-gray-500/10 backdrop-blur-lg border border-deep-space-blue/20 p-1.5 md:gap-2">
           <NavLink href="/about" Icon={IoPersonOutline} label="About"/>
           <NavLink href="/experience" Icon={MdWorkOutline} label="Experience"/>
           <NavLink href="/projects" Icon={GrProjects} label="Projects"/>
         </div>
 
         {/* social media links */}
-        <div className="justify-end gap-4 flex w-32">
+        <div className="justify-end gap-2 md:gap-4 flex w-24 md:w-32">
           <SocialLink href="https://www.linkedin.com/in/jalyn-tandy/" Icon={FaLinkedin} />
           <SocialLink href="https://github.com/Jalyn-R-Tandy" Icon={FaGithub} />
         </div>
@@ -43,9 +43,9 @@ function NavLink({ href, Icon, label }: { href: string; Icon: IconType; label: s
   const isActive = pathname === href
 
   return (
-    <Link href={href} className={`text-sm font-medium py-1.5 px-4 rounded-full flex gap-2 text-deep-space-blue/80 ${isActive ? 'bg-white' : ''}`}>
+    <Link href={href} className={`text-sm font-medium py-1.5 px-3 md:px-4 rounded-full flex gap-2 text-deep-space-blue/80 ${isActive ? 'bg-white' : ''}`}>
       <Icon size={18} />
-      {label}
+      <span className="hidden md:block">{label}</span>
     </Link>
   );
 }
