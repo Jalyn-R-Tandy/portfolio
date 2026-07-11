@@ -47,7 +47,7 @@ export function Navbar() {
           <button
             onClick={toggleMenu}
           >
-            <IoMenu></IoMenu>
+            <IoMenu size={24}></IoMenu>
           </button>
         </div>
       </div>
