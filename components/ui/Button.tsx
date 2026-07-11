@@ -4,7 +4,7 @@ import Link from "next/link"
 export function Button({ href, Icon, label, color, isDownload }: {href: string; Icon: IconType; label: string; color: string; isDownload: boolean; }) {
 
   {/** general class styles for button */}
-  const className = "text-sm font-medium px-8 py-3 rounded-full flex gap-2"
+  const className = "flex px-8 py-3 rounded-full gap-2 text-sm font-medium justify-center"
 
   {/** handles downloadable content (ex. PDF) */}
   if (isDownload) {
