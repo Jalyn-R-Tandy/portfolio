@@ -2,9 +2,9 @@ import { experiences } from "@/data/experience"
 
 export default function Experience() {
   return (
-    <section className="p-4 md:p-24">
+    <section className="py-16 max-w-4xl mx-auto">
       <h2 className="font-bold text-center text-3xl mb-16">Experience</h2>
-      <div className="space-y-12 bg-text-subtle/10 border border-text-main/20 rounded-md p-6">
+      <div className="space-y-12 bg-text-subtle/10 border border-text-main/20 rounded-md p-6 mx-4">
         {experiences.map((experience, index) => (
           <div key={index} className="grid grid-cols-1 md:grid-cols-4 gap-4 md:p-12">
             {/** LEFT SIDE - company role */}

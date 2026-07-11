@@ -29,7 +29,7 @@ export function ProjectCard({ title, description, tags, link, status }: {
         <div className="flex flex-col">
           <div className="mt-4 mb-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <span key={tag} className="px-2 py-1 text-xs bg-accent/20 rounded-md text-text-main">
+              <span key={tag} className="px-3 py-1 text-xs font-medium bg-accent/50 rounded-full">
                 {tag}
               </span>
             ))}
