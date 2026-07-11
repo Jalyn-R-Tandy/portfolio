@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={outfit.className}>
       <body className="min-h-screen flex flex-col bg-surface text-text-main">
         <Navbar />
-        <main className="flex flex-1 justify-center items-stretch">
+        <main className="flex flex-1 justify-center items-center">
           {children}
         </main>
         <Footer />

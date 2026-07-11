@@ -24,7 +24,7 @@ export function Navbar() {
         {/* name branding */}
         <div className="w-24 md:w-32">
           <Link href="/">
-            <h1 className="text-lg md:text-xl w-32 font-bold">Jalyn Tandy</h1>
+            <h1 className="text-xl w-32 font-bold">Jalyn Tandy</h1>
           </Link>
         </div>
         {/* centered pill nav bar */}

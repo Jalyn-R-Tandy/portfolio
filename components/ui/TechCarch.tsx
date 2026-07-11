@@ -5,12 +5,12 @@ export function TechCard({ logo, title }: { logo: string; title: string; }) {
     <div className="bg-gray-50 rounded-lg p-10 flex flex-col items-center justify-center border border-text-main/20">
       <Image 
         src={logo}
-        width={48} 
-        height={48}
+        width={36} 
+        height={36}
         alt="python"
         className="mb-3"
       />
-      <p>{title}</p>
+      <p className="font-medium">{title}</p>
     </div>
   )
 }
