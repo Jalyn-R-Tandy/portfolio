@@ -12,7 +12,7 @@ export default function About() {
 
       <h2 className="font-bold text-center text-3xl mb-16">Tech I Work With</h2>
       <div className="p-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           <TechCard logo="/python.svg" title="Python" />
           <TechCard logo="/java.svg" title="Java" />
           <TechCard logo="/react.svg" title="React" />
