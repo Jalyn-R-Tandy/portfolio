@@ -4,7 +4,7 @@ import { BsDownload } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center text-center mx-auto py-20 min-h-[80vh] max-w-4xl">
+    <section className="flex flex-col justify-center items-center text-center mx-auto py-20 min-h-[80vh] max-w-4xl">
       {/** introduction */}
       <h1 className="mb-4 text-5xl sm:text-6xl font-bold">Hi, I&apos;m Jalyn <br className="md:hidden"/>
       Tandy</h1>
@@ -15,6 +15,6 @@ export default function Home() {
         <Button href="/projects" Icon={GrProjects} label="View Projects" color="bg-steel-blue text-surface" isDownload={false} />
         <Button href="/resume.pdf" Icon={BsDownload} label="Download Resume" color="border border-gray-500/20" isDownload />
       </div>
-    </div>
+    </section>
   );
 }

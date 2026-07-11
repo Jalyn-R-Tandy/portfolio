@@ -2,7 +2,7 @@ import { TechCard } from "@/components/ui/TechCarch"
 
 export default function About() {
   return (
-    <div className="py-16 max-w-4xl mx-auto">
+    <section className="py-16 max-w-4xl mx-auto">
       <div className="mb-16 p-2">
         <h2 className="font-bold text-center text-3xl mb-16">About Me</h2>
         <div className="mb-12">
@@ -20,6 +20,6 @@ export default function About() {
           <TechCard logo="/tailwindcss.svg" title="TailwindCSS" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
